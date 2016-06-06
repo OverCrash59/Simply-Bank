@@ -4,7 +4,7 @@ using Microsoft.VisualStudio.TestPlatform.UnitTestFramework;
 namespace SimplyBankUWP.Tests
 {
     [TestClass]
-    public class UnitTest1
+    public class UnitTests
     {
         [TestMethod]
         public void TestMethod1()

@@ -14,6 +14,10 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Microsoft.EntityFrameworkCore;
+using SimplyBankUWP.Models;
+using SimplyBankUWP.View;
+
 
 namespace SimplyBankUWP
 {
@@ -33,6 +37,12 @@ namespace SimplyBankUWP
                 Microsoft.ApplicationInsights.WindowsCollectors.Session);
             this.InitializeComponent();
             this.Suspending += OnSuspending;
+
+            //using (var db = new AccountModel())
+            //{
+            //    db.Database.Migrate();
+            //}
+
         }
 
         /// <summary>
